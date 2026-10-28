@@ -106,6 +106,15 @@ class ConverterTests(unittest.TestCase):
         self.assertIn("25000.5", text)
         self.assertGreaterEqual(len(Document(str(target)).tables), 1)
 
+    def test_xls_to_docx(self) -> None:
+        source = Path(__file__).parent / "fixtures" / "sample.xls"
+        target = self.root / "sample.docx"
+        asyncio.run(convert_file(source, target))
+        text = _document_text(target)
+        self.assertIn("Nom", text)
+        self.assertIn("Olma", text)
+        self.assertEqual(len(Document(str(target)).tables), 1)
+
     def test_csv_to_docx(self) -> None:
         source = self.root / "odamlar.csv"
         source.write_text("Ism;Yosh\nAli;25\nVali;30\n", encoding="utf-8")

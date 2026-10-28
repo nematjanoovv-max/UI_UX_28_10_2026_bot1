@@ -33,6 +33,11 @@ cp .env.example .env
 python bot.py
 ```
 
+> Agar loyiha `/sdcard` ichida bo'lsa, Android FUSE cheklovi sabab `.venv`
+> yaratilmasligi mumkin. U holda venvni boshqa joyda yarating:
+> `python3 -m venv /tmp/wordbot-venv && /tmp/wordbot-venv/bin/pip install -r requirements.txt`
+> va `/tmp/wordbot-venv/bin/python bot.py` bilan ishga tushiring.
+
 Token bo'lmasa yoki noto'g'ri bo'lsa bot aniq xato bilan to'xtaydi.
 `RENDER_EXTERNAL_URL` yo'q bo'lsa **long-polling**, bor bo'lsa **webhook**
 rejimi avtomatik ishlaydi.

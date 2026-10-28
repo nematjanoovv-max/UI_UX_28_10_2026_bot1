@@ -136,6 +136,8 @@ async def handle_document(
 
         async with semaphore:
             await _edit(status, "⏳ Konvertatsiya qilinmoqda...")
+            # shortcut: wait_for threadni to'xtatmaydi — juda katta fayl
+            # timeoutdan keyin ham fonda davom etishi mumkin.
             await asyncio.wait_for(
                 convert_file(source, target), timeout=CONVERT_TIMEOUT
             )
