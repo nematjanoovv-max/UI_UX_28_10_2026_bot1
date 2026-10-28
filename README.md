@@ -3,6 +3,9 @@
 Telegram bot: **PDF, Excel, CSV, TXT va Markdown** fayllarini **Word (.docx)** ga
 aylantiradi.
 
+**Live bot:** [@Nnnbbn_bot](https://t.me/Nnnbbn_bot) ·
+**Render:** <https://word-converter-bot-2810.onrender.com>
+
 ## Imkoniyatlar
 
 | Format | Natija |
