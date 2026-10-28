@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: word-converter-bot
+    name: word-converter-bot-2810
     runtime: python
     plan: free
     region: frankfurt
