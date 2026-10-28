@@ -65,7 +65,9 @@ git push
 1. Yuqoridagi repo Render akkauntiga ulangan bo'lsin.
 2. Bir marta bosish bilan Blueprint:
 
-   <https://render.com/deploy?repo=https://github.com/nematjanoovv-max/UI_UX_28_10_2026>
+   [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/nematjanoovv-max/UI_UX_28_10_2026)
+
+   Havola: <https://render.com/deploy?repo=https://github.com/nematjanoovv-max/UI_UX_28_10_2026>
 
 3. `BOT_TOKEN` so'ralganda @BotFather dan olingan tokenni kiriting.
 4. **Apply** — `render.yaml` bo'yicha web service yaratiladi.
