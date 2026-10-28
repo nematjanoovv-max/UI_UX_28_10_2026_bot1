@@ -1,4 +1,4 @@
-# Word Converter Bot — UI_UX_28_10_2026
+# Word Converter Bot — UI_UX_28_10_2026_bot1
 
 Telegram bot: **PDF, Excel, CSV, TXT va Markdown** fayllarini **Word (.docx)** ga
 aylantiradi.
@@ -25,7 +25,7 @@ aylantiradi.
 ## Lokal ishga tushirish
 
 ```bash
-cd UI_UX_28_10_2026
+cd UI_UX_28_10_2026_bot1
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -55,7 +55,7 @@ Testlar PDF, XLSX, CSV, TXT va Markdown konvertatsiyasini tekshiradi.
 
 ## GitHub
 
-Repo: <https://github.com/nematjanoovv-max/UI_UX_28_10_2026>
+Repo: <https://github.com/nematjanoovv-max/UI_UX_28_10_2026_bot1>
 
 ```bash
 git add .
@@ -68,9 +68,9 @@ git push
 1. Yuqoridagi repo Render akkauntiga ulangan bo'lsin.
 2. Bir marta bosish bilan Blueprint:
 
-   [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/nematjanoovv-max/UI_UX_28_10_2026)
+   [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/nematjanoovv-max/UI_UX_28_10_2026_bot1)
 
-   Havola: <https://render.com/deploy?repo=https://github.com/nematjanoovv-max/UI_UX_28_10_2026>
+   Havola: <https://render.com/deploy?repo=https://github.com/nematjanoovv-max/UI_UX_28_10_2026_bot1>
 
 3. `BOT_TOKEN` so'ralganda @BotFather dan olingan tokenni kiriting.
 4. **Apply** — `render.yaml` bo'yicha web service yaratiladi.
@@ -95,7 +95,7 @@ avtomatik o'rnatadi. `GET /health` — health-check uchun.
 ## Struktura
 
 ```
-UI_UX_28_10_2026/
+UI_UX_28_10_2026_bot1/
 ├── bot.py            # Telegram handlerlar, webhook/polling
 ├── converters.py     # PDF/Excel/CSV/TXT/MD -> DOCX
 ├── requirements.txt
