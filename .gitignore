@@ -7,3 +7,6 @@ __pycache__/
 tmp/
 *.log
 .DS_Store
+
+# Shaxsiy eslatmalar — faqat lokal
+Havolalar.txt

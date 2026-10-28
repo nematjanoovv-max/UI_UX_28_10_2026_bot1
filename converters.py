@@ -61,10 +61,6 @@ def _convert_sync(source: Path, target: Path) -> Path:
     return target
 
 
-# ---------------------------------------------------------------------------
-# Word hujjati yordamchilari
-# ---------------------------------------------------------------------------
-
 def _new_document(landscape: bool = False):
     from docx import Document
     from docx.enum.section import WD_ORIENT
@@ -151,10 +147,6 @@ def _normalize_rows(rows: list[list[str]]) -> list[list[str]]:
     return clean
 
 
-# ---------------------------------------------------------------------------
-# PDF
-# ---------------------------------------------------------------------------
-
 def _pdf_to_docx(source: Path, target: Path) -> None:
     page_count = _pdf_page_count(source)
     if page_count and page_count > MAX_PDF_PAGES:
@@ -227,10 +219,6 @@ def _pdf_text_fallback(source: Path, target: Path) -> None:
     document.save(str(target))
 
 
-# ---------------------------------------------------------------------------
-# Excel (.xlsx / .xlsm)
-# ---------------------------------------------------------------------------
-
 def _excel_to_docx(source: Path, target: Path) -> None:
     from openpyxl import load_workbook
 
@@ -261,10 +249,6 @@ def _excel_to_docx(source: Path, target: Path) -> None:
         raise ConversionError("Excel fayl bo'sh — unda ma'lumot topilmadi.")
     document.save(str(target))
 
-
-# ---------------------------------------------------------------------------
-# Excel (.xls)
-# ---------------------------------------------------------------------------
 
 def _xls_to_docx(source: Path, target: Path) -> None:
     import xlrd
@@ -310,10 +294,6 @@ def _xls_to_docx(source: Path, target: Path) -> None:
     document.save(str(target))
 
 
-# ---------------------------------------------------------------------------
-# CSV / TSV
-# ---------------------------------------------------------------------------
-
 def _csv_to_docx(source: Path, target: Path) -> None:
     text = _read_text(source)
     if not text.strip():
@@ -341,10 +321,6 @@ def _csv_to_docx(source: Path, target: Path) -> None:
     _add_table(document, rows)
     document.save(str(target))
 
-
-# ---------------------------------------------------------------------------
-# TXT / Markdown
-# ---------------------------------------------------------------------------
 
 def _read_text(source: Path) -> str:
     data = source.read_bytes()
